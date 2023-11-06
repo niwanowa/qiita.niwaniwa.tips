@@ -1,5 +1,5 @@
 ---
-title: Qiita cliでできること、できないこと
+title: Qiita CLIでできること、できないこと
 tags:
   - Qiita
   - QiitaCLI
@@ -42,7 +42,7 @@ markdownファイルを保存すると自動でブラウザも更新してくれ
 リンクカードなど、md標準でない機能もきちんと動いてくれます。感謝。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/c31a7b1b-9596-d941-0f1e-a1c55d9aa3fd.png)
 - 改行が改行だけでよい
-hugo、というかmdだと改行するときにスペース2つ入れないといけないのですが、Qiita cliだと改行だけでよいです。
+hugo、というかmdだと改行するときにスペース2つ入れないといけないのですが、Qiita CLIだと改行だけでよいです。
 感情の赴くままにキーボードを叩く勢なので非常に助かります。日本語入力の時、特に。
 
 # できないこと(ちょっと辛いこと)
@@ -58,7 +58,7 @@ hugo、というかmdだと改行するときにスペース2つ入れないと�
 　hugoにはpagebundleという機能があります。
 　これと[Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)というVSCodeの拡張機能を使うと、ctrl+Vで画像を張り付けることができ、
 　画像の管理がしあわせに行うことができます。
-　要するにqiita cliで画像を貼り付けようとするとちょっと辛いです。
+　要するにqiita CLIで画像を貼り付けようとするとちょっと辛いです。
 Page bundles | Hugo
 
 https://gohugo.io/content-management/page-bundles/
@@ -71,7 +71,7 @@ https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
 現状、再現2回。ctrl+S連打マンだとなるかも？
 
 # おまけ
-こんな感じのtasks.jsonを書いておくとvscodeでQiita cli用のプロジェクトを開くだけでプレビューページが表示されて幸せになれます。
+こんな感じのtasks.jsonを書いておくとvscodeでQiita CLI用のプロジェクトを開くだけでプレビューページが表示されて幸せになれます。
 ```tasks.json
 {
     "version": "2.0.0",
@@ -93,5 +93,5 @@ https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
 ```
 
 # さいごに
-以上。Qiita cliに触れてみた感想でした。
+以上。Qiita CLIに触れてみた感想でした。
 マジで簡単に環境作れるのでおすすめです。

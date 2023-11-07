@@ -12,6 +12,18 @@
             "runOptions": {
                 "runOn": "folderOpen"
             }
+        },
+        {
+            "label": "Qiita pull",
+            "type": "shell",
+            "command": "bash -c \"npx qiita pull\"",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
         }
     ]
 }

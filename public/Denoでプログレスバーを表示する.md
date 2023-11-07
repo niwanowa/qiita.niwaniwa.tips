@@ -76,7 +76,7 @@ https://deno.land/x/progress@v1.3.9
 でないとこんな感じで閉まらない終わり方になってしまいます。
 ![bar-kimoi.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/5280bdb1-de23-cebc-ceeb-b82da8bbd2a4.gif)
 
-~~プログレスバーなのに完了しないことを想定してないからね… ~~
+~~プログレスバーなのに完了しないことを想定してないからね…~~
 
 # まとめ
 

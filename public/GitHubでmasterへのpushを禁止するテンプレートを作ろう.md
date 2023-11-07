@@ -19,3 +19,6 @@ masterへの直pushは、定期的に犯してしまう過ちの一つですが
 そこでテンプレートとして組み込めないかなっていうことで奮闘しました。
 
 https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-template-repository
+
+# おまけ
+ついでにISSUEテンプレートとプルリクテンプレートも作ったよ(予定)

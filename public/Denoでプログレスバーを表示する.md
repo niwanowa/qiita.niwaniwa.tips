@@ -18,12 +18,11 @@ ignorePublish: false
 プログレスバー、見てるとテンションアがるよね？
 
 # 作ったもの
-
-![bar-kansei.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/a0e8eee9-ba6c-c596-8d35-63363f09b13b.gif)
-
 ソースはこちら
 
 https://github.com/niwanowa/DenoAdventBar
+
+![bar-kansei.gif](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/a0e8eee9-ba6c-c596-8d35-63363f09b13b.gif)
 
 # 要件
 

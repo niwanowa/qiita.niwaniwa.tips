@@ -1,11 +1,11 @@
 ---
 title: AWS SAM入門してみた
 tags:
-  - 'AWS'
-  - 'AWSSAM'
+  - AWS
+  - AWSSAM
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-11-08T20:37:39+09:00'
+id: c6c4dbd47bbf00a138f3
 organization_url_name: null
 slide: false
 ignorePublish: false

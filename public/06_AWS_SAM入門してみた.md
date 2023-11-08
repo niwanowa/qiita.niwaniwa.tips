@@ -1,7 +1,8 @@
 ---
 title: AWS SAM入門してみた
 tags:
-  - ''
+  - 'AWS'
+  - 'AWS SAM'
 private: true
 updated_at: ''
 id: null

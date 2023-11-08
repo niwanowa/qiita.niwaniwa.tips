@@ -70,6 +70,11 @@ https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
 - リンクカードの表示がおかしくなる時がある
 現状、再現2回。ctrl+S連打マンだとなるかも？
 
+- updated_atが毎度更新される
+限定共有記事限定？
+特に差分がないはずなのに更新される。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/5b518e84-82e8-9bca-9824-a518ad11650f.png)
+
 # おまけ
 こんな感じのtasks.jsonを書いておくとvscodeでQiita CLI用のプロジェクトを開くだけでプレビューページが表示されて幸せになれます。
 ```tasks.json

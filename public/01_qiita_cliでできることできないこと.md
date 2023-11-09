@@ -55,10 +55,10 @@ hugo、というかmdだと改行するときにスペース2つ入れないと�
 これを自分好みのものに変えられないです。
 例えば```private: true```にするとか、やりたいことはあるのですが...
 - ページバンドルがない
-　hugoにはpagebundleという機能があります。
-　これと[Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)というVSCodeの拡張機能を使うと、ctrl+Vで画像を張り付けることができ、
-　画像の管理がしあわせに行うことができます。
-　要するにqiita CLIで画像を貼り付けようとするとちょっと辛いです。
+hugoにはpagebundleという機能があります。
+これと[Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)というVSCodeの拡張機能を使うと、ctrl+Vで画像を張り付けることができ、
+画像の管理がしあわせに行うことができます。
+要するにqiita CLIで画像を貼り付けようとするとちょっと辛いです。
 Page bundles | Hugo
 
 https://gohugo.io/content-management/page-bundles/
@@ -74,6 +74,10 @@ https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image
 限定共有記事限定？
 特に差分がないはずなのに更新される。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/5b518e84-82e8-9bca-9824-a518ad11650f.png)
+
+- タグに空白が含まれるとGHAで落ちる
+これはQiitaにわかの自分が悪い部分もありますが、落ちてるときのログがこれ。
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/46a84687-acc7-ed83-fa62-25f453866e9d.png)
 
 # おまけ
 こんな感じのtasks.jsonを書いておくとvscodeでQiita CLI用のプロジェクトを開くだけでプレビューページが表示されて幸せになれます。

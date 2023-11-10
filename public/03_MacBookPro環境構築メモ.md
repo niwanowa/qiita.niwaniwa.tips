@@ -11,6 +11,19 @@ ignorePublish: true
 ---
 # はじめに
 [にわのわ](https://twitter.com/niwa_nowa)です。
+
+# 設定
+- スクショの設定
+やらないとデスクトップが地獄となる。
+
+- 
+
 # インストールしたもの（するもの）
 docker
 vscode
+zsh
+# その他
+- スキンシール
+wraplusのスキンシールがいい感じ。
+https://wraplus.jp/products/macbook-pro14_2021-orange-none-cut
+- 

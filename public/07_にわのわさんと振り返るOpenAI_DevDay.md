@@ -7,10 +7,10 @@ updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 # はじめに
-[にわのわ](https://twitter.com/niwa_nowa)です。
+どうもOpenAIのAPIをOpenAPIと書きがちな[にわのわ](https://twitter.com/niwa_nowa)です。
 2023/11/07に行われたOpenAI DevDayの内容について振り返っていこうと思います。
 1ヶ月経って記憶が薄れてきた頃合いだと思うので一緒に復習しましょう。
 
@@ -61,7 +61,7 @@ ChatGPT Plusで利用できていた画像生成AIがAPIとしても利用可能
 
 # 試してみた
 ### 実行環境
-ソースはこちら
+全体のソースはこちら
 
 https://github.com/niwanowa/tryOpenAIAPI
 
@@ -265,11 +265,157 @@ print(response.model_dump_json(indent=2))
     "total_tokens": 1297
   }
 }
-```　
+
+```
 
 </div></details>
 
+### 画像入力
+注意点としては```model="gpt-4-vision-preview"```とすること。
+入力した画像はこれで```この画像はどのようなプロンプトで生成可能ですか？```というプロンプトに対して回答を求めています。
+
+![image.png](https://hugo.niwanowa.tips/twittericon.png)
+
+出力はこう。
+うまくいってそう。
+
+```text
+この画像はアニメスタイルのキャラクターの顔を表示しています。生成するには、以下のようなプロンプトが考えられます。
+"アニメスタイルの女の子のキャラクター、大きな目、白髪、ヘッドフォン、表情は少し不機嫌そう、フルフェイスのクローズアップ、高解像度
+```
+
+以下ソースと出力
+```python
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv("OPEN_AI_KEY"),
+)
+
+response = client.chat.completions.create(
+    model="gpt-4-vision-preview",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": "この画像はどのようなプロンプトで生成可能ですか？"},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": "https://hugo.niwanowa.tips/twittericon.png",
+                    },
+                },
+            ],
+        }
+    ],
+    max_tokens=300,
+)
+
+print(response.model_dump_json(indent=2))
+```
+
+<details><summary>出力</summary><div>
+
+```json
+{
+  "id": "chatcmpl-8JbsGf0nWuku3ARdKjSQDXWeKl7d9",
+  "choices": [
+    {
+      "finish_reason": null,
+      "index": 0,
+      "message": {
+        "content": "この画像はアニメスタイルのキャラクターの顔を表示しています。生成するには、以下のようなプロンプトが考えられます。\n\n\"アニメスタイルの女の子のキャラクター、大きな目、白髪、ヘッドフォン、表情は少し不機嫌そう、フルフェイスのクローズアップ、高解像度\"",
+        "role": "assistant",
+        "function_call": null,
+        "tool_calls": null
+      },
+      "finish_details": {
+        "type": "stop",
+        "stop": "<|fim_suffix|>"
+      }
+    }
+  ],
+  "created": 1699684512,
+  "model": "gpt-4-1106-vision-preview",
+  "object": "chat.completion",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 122,
+    "prompt_tokens": 282,
+    "total_tokens": 404
+  }
+}
+```
+
+</div></details>
+
+### DALLE-3 API
+sizeが512x512で指定できないので注意(1敗)
+先ほどの画像入力でどんなプロンプトですか？って聞いてみたのでそのプロンプトで生成してみた。
+
+「個性」を感じていいね。
+![dalle3.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/00e67bd5-1ee2-bbe2-d367-25f718ca22c6.png)
+```python
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv("OPEN_AI_KEY"),
+)
+
+response = client.images.generate(
+  model="dall-e-3",
+  prompt="アニメスタイルの女の子のキャラクター、大きな目、白髪、ヘッドフォン、表情は少し不機嫌そう、フルフェイスのクローズアップ",
+  size= "1024x1024",
+  quality="standard",
+  n=1,
+)
+
+print(response.model_dump_json(indent=2))
+```
+
+### TTS API
+「昔々あるところにおじいさんとおばあさんとにわのわさんが居ました。」
+と読んでもらうことにします。
+結果はこちら。
+
+https://hugo.niwanowa.tips/output.mp3
+
+ちょっと笑っちゃった。
+まだ日本語は難しそうですね。
+
+以下ソース
+```python
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv("OPEN_AI_KEY"),
+)
+
+response = client.audio.speech.create(
+    model="tts-1",
+    voice="alloy",
+    input="昔々あるところにおじいさんとおばあさんとにわのわさんが居ました。",
+)
+
+response.stream_to_file("output.mp3")
+```
+
+# おわりに
+とにもかくにもAPIが触るのがめちゃくちゃ簡単で感動しました。
+コストもこんな感じでかなりしばらく遊べそう(コスト管理画面がめちゃくちゃ見やすいのもいいよね！)
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/cbef3df1-7663-291d-8fc2-565be1ff2378.png)
+
 # 参考
+
 New models and developer products announced at DevDay
 https://openai.com/blog/new-models-and-developer-products-announced-at-devday
 

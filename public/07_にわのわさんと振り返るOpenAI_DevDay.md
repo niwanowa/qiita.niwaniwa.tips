@@ -1,7 +1,8 @@
 ---
 title: にわのわさんと振り返るOpenAI_DevDay
 tags:
-  - ''
+  - 'OpenAI'
+  - 'ChatGPT'
 private: true
 updated_at: ''
 id: null

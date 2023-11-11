@@ -4,7 +4,7 @@ tags:
   - OpenAI
   - ChatGPT
 private: true
-updated_at: '2023-11-11T23:21:42+09:00'
+updated_at: '2023-11-11T23:24:59+09:00'
 id: c0744fa4e9ffeeb258ec
 organization_url_name: null
 slide: false

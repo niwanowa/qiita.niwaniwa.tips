@@ -1,5 +1,5 @@
 ---
-title: Figma入門してみた
+title: STUDIO入門してみた
 tags:
   - ''
 private: true

@@ -1,10 +1,10 @@
 ---
 title: MacBookPro環境構築メモ
 tags:
-  - 'macOS'
+  - macOS
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-11-14T23:48:27+09:00'
+id: 55780746d9563215b3dd
 organization_url_name: null
 slide: false
 ignorePublish: false

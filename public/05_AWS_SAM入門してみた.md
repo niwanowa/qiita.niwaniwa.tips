@@ -4,7 +4,7 @@ tags:
   - AWS
   - AWSSAM
 private: true
-updated_at: '2023-11-14T22:41:29+09:00'
+updated_at: '2023-11-14T23:48:27+09:00'
 id: c6c4dbd47bbf00a138f3
 organization_url_name: null
 slide: false

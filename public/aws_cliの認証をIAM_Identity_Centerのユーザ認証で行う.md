@@ -1,12 +1,12 @@
 ---
 title: AWS CLIの認証をIAM Identity Centerのユーザ認証で行う
 tags:
-  - 'aws-cli'
-  - 'AWS'
-  - 'awscli'
+  - AWS
+  - aws-cli
+  - awscli
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-11-15T15:52:31+09:00'
+id: 20dd58d576b81dad7d7a
 organization_url_name: null
 slide: false
 ignorePublish: false

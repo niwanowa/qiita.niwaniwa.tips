@@ -20,6 +20,14 @@ M3になり、かなり熟れてきた頃合いと判断し、MacBookProを購�
 ```command + shift + 5```でスクリーンショットを起動
 オプションから保存先をクリップボードに変更する。
 
+- アイコン周りの設定
+  - システム設定 -> Apple ID
+  赤枠で囲ったところに任意の画像をドラッグ＆ドロップ
+  ![icon設定.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/6dae700e-1c75-e0ff-ddab-6073a38cf281.png)
+
+  - システム設定 -> ユーザとグループ
+  アイコンをクリックして上と同様にドラッグ&ドロップ
+
 - システム設定 > マウス
  - 軌道の速さをデフォルトよりも速くする
  早ければ早いほど良いとされています
@@ -94,6 +102,16 @@ sudo chown -R 501:20 "/Users/{ユーザ名}/.npm"
 npm install @qiita/qiita-cli --save-dev
 npx qiita login
 ```
+
+## AWS CLI
+[こちら](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)参照
+```bash
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+```
+
+
+
 ## フォントの設定
 こちらをダウンロード
 
@@ -110,6 +128,7 @@ https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/apple-silicon/
 ```bash
 softwareupdate --install-rosetta
 ```
+
 
 # その他
 - スキンシール

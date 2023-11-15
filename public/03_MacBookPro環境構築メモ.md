@@ -109,8 +109,19 @@ npx qiita login
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 ```
+## Google日本語入力
 
+https://www.google.co.jp/ime/
 
+インストール後、キーボード設定から余計な入力ソースを外す。
+
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/6160dc51-c69a-edea-652e-559689ee1f0c.png)
+
+### Google日本語入力 -> 環境設定
+- 一般
+  - スペースの入力 : 半角
+- その他
+  - ログイン時に変換エンジンプログラムを起動するにチェック
 
 ## フォントの設定
 こちらをダウンロード

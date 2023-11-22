@@ -5,7 +5,7 @@ tags:
   - aws-cli
   - awscli
 private: true
-updated_at: '2023-11-15T17:26:45+09:00'
+updated_at: '2023-11-21T21:42:14+09:00'
 id: 20dd58d576b81dad7d7a
 organization_url_name: null
 slide: false

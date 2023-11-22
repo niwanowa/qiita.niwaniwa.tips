@@ -4,7 +4,7 @@ tags:
   - GitHub
   - githubcopilot
 private: true
-updated_at: '2023-11-15T17:26:45+09:00'
+updated_at: '2023-11-21T21:42:14+09:00'
 id: 540c314dd016c3918e7f
 organization_url_name: null
 slide: false

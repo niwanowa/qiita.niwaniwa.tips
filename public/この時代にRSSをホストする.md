@@ -1,5 +1,5 @@
 ---
-title: この時代にRSSをホストする
+title: この時代にRSS(Atom)をホストする
 tags:
   - 'RSS'
   - 'AWS'

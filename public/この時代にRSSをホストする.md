@@ -1,12 +1,12 @@
 ---
 title: この時代にRSS(Atom)をホストする
 tags:
-  - 'RSS'
-  - 'AWS'
-  - 'python'
+  - Python
+  - AWS
+  - RSS
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-12-01T22:47:20+09:00'
+id: c2179ac56e43aa926a67
 organization_url_name: null
 slide: false
 ignorePublish: false

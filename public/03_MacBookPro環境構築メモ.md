@@ -3,7 +3,7 @@ title: MacBookPro環境構築メモ
 tags:
   - macOS
 private: true
-updated_at: '2023-12-02T20:35:23+09:00'
+updated_at: '2023-12-02T20:36:44+09:00'
 id: 55780746d9563215b3dd
 organization_url_name: null
 slide: false

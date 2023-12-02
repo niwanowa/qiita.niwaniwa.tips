@@ -4,7 +4,7 @@ tags:
   - Qiita
   - QiitaCLI
 private: false
-updated_at: '2023-11-22T16:36:55+09:00'
+updated_at: '2023-12-01T07:01:16+09:00'
 id: f8441d3b2183f2d4d67b
 organization_url_name: null
 slide: false

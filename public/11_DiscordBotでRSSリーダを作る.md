@@ -4,9 +4,9 @@ tags:
   - 'python'
   - 'discord'
   - 'discord.py'
-private: true
-updated_at: ''
-id: null
+private: false
+updated_at: '2023-12-02T20:35:24+09:00'
+id: a5cf4120c804e81d5eb0
 organization_url_name: null
 slide: false
 ignorePublish: false

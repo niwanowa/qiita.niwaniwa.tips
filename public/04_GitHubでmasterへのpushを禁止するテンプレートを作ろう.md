@@ -2,8 +2,8 @@
 title: master(main)へのpushを禁止するテンプレートを作ろう
 tags:
   - GitHub
-private: true
-updated_at: '2023-12-02T20:36:44+09:00'
+private: false
+updated_at: '2023-12-04T07:00:50+09:00'
 id: 2cd18577c6ed3b0ecf96
 organization_url_name: null
 slide: false

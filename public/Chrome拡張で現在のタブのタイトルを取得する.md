@@ -1,12 +1,12 @@
 ---
 title: Chrome拡張で現在のタブのタイトルを取得する
 tags:
-  - 'HTML'
-  - 'CSS'
-  - 'chrome-extension'
+  - HTML
+  - CSS
+  - chrome-extension
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-12-04T17:48:55+09:00'
+id: 7cae00f9a0c84c0272ae
 organization_url_name: null
 slide: false
 ignorePublish: false

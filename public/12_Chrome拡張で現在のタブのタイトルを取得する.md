@@ -5,7 +5,7 @@ tags:
   - CSS
   - chrome-extension
 private: true
-updated_at: '2023-12-06T18:13:22+09:00'
+updated_at: '2023-12-06T18:17:19+09:00'
 id: 7cae00f9a0c84c0272ae
 organization_url_name: null
 slide: false

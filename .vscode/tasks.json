@@ -16,7 +16,7 @@
         {
             "label": "Qiita pull",
             "type": "shell",
-            "command": "bash -c \"npx qiita pull\"",
+            "command": "bash -c \"npx qiita pull -f\"",
             "presentation": {
                 "reveal": "always",
                 "panel": "new"

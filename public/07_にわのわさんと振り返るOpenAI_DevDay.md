@@ -3,8 +3,8 @@ title: にわのわさんと振り返るOpenAI_DevDay
 tags:
   - OpenAI
   - ChatGPT
-private: true
-updated_at: '2023-12-06T19:46:20+09:00'
+private: false
+updated_at: '2023-12-07T07:00:38+09:00'
 id: c0744fa4e9ffeeb258ec
 organization_url_name: null
 slide: false

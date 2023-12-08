@@ -4,8 +4,8 @@ tags:
   - AWS
   - aws-cli
   - awscli
-private: true
-updated_at: '2023-12-07T21:05:21+09:00'
+private: false
+updated_at: '2023-12-08T07:00:43+09:00'
 id: 20dd58d576b81dad7d7a
 organization_url_name: null
 slide: false

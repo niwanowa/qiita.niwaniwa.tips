@@ -1,20 +1,49 @@
 ---
 title: QiitaのAIサジェスト機能使ってみた
 tags:
-  - ''
+  - 'Qiita'
 private: true
 updated_at: ''
 id: null
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 # はじめに
-[にわのわ](https://twitter.com/niwa_nowa)です。
+こんにちは、人間の[にわのわ](https://twitter.com/niwa_nowa)です。
 
+みなさんはQiitaのAIサジェスト機能を使っていますか？
+こちらの記事で利用申請方法についても書かれているのでぜひ触ってみてください！
+https://blog.qiita.com/ai-suggest-closed-beta/?utm_source=qiita&utm_content=official_column&utm_medium=referral
 
+今日はQiitaのAIサジェスト機能を使用上限まで使わせてもらったので、その感想を書いていきます。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/bfd1270b-f4b8-927f-bf77-0a0d7e665872.png)
 
-<details><summary>折りたたみ</summary><div>
+# 注意点
+コミュニティガイドラインにも書かれているように、AIサジェスト機能を利用する場合は、AIが生成した内容は正確性を確かめましょう。
 
-</div></details>
+>  AIが生成した内容は正確性を確かめよう
+記事等の執筆に便利なAIツールを活用することそのものは禁止していませんが、AIが生成した内容は、そのまま投稿するのではなく、正しいかどうかを検証した上で投稿するようにしましょう。 Qiitaで提供しているAI機能を利用する場合も同様です。 正確ではない情報が投稿されることは、コミュニティにとって望ましいことではありません。内容に責任をもって投稿しましょう。
+
+https://help.qiita.com/ja/articles/qiita-community-guideline
+
+# 使ってみた感想
+使ってみた感想としてはかなりポジティブな印象でした。
+０ベースで記事を書くよりも下地を作ってくれるので、筆の進みがかなり早くなると思います。
+
+# 具体的な使用感
+すでに使用上限に達してしまっているため、
+スクリーンショットや具体的な生成内容を記載することができません。
+申し訳ありません。
+
+＋ 生成する内容は文章としてまとまっていると感じた
+＋ AWS lambdaについてみたいな見出しをつけて、AIサジェスト機能を利用すると正しい情報が出力された
+(マイナーなものだとうまく出力されなかった)
+− (クローズドベータ版だからかもしれないが)1記事書いているだけで使用上限に達してしまった
+− (クローズドベータ版だからかもしれないが)30%くらいの確率で空のレスポンスが返ってきた
+
+# おわりに
+ツイッター上でクローズドベータ版だから記事にするのはだめだよなぁとぼそっと呟いたところ、公式さんに背中を押してくださったので
+こちらで感謝を示させてください。
+
+https://twitter.com/Qiita/status/1732646401585390010

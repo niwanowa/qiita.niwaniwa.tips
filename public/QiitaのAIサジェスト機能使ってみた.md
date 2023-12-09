@@ -1,10 +1,10 @@
 ---
 title: QiitaのAIサジェスト機能使ってみた
 tags:
-  - 'Qiita'
+  - Qiita
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-12-09T20:04:14+09:00'
+id: edd3f51b54dcbefca651
 organization_url_name: null
 slide: false
 ignorePublish: false

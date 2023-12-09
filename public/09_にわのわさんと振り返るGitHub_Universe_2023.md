@@ -3,7 +3,7 @@ title: にわのわさんと振り返るGitHub_Universe_2023
 tags:
   - GitHub
   - githubcopilot
-private: true
+private: false
 updated_at: '2023-12-08T18:49:03+09:00'
 id: 540c314dd016c3918e7f
 organization_url_name: null

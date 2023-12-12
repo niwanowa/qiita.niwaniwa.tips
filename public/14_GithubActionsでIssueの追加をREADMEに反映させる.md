@@ -3,7 +3,7 @@ title: Github ActionsでIssueの追加をREADMEに反映させる
 tags:
   - GitHubActions
 private: true
-updated_at: '2023-12-11T22:58:35+09:00'
+updated_at: '2023-12-12T21:46:35+09:00'
 id: d994ca63c63c7697ce95
 organization_url_name: null
 slide: false

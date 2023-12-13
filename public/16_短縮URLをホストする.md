@@ -3,7 +3,7 @@ title: 短縮URLを自作する
 tags:
   - Python
 private: true
-updated_at: '2023-12-13T21:15:27+09:00'
+updated_at: '2023-12-13T21:44:53+09:00'
 id: d8136c5f476f8596288d
 organization_url_name: null
 slide: false

@@ -3,8 +3,8 @@ title: AWS SAMで最速CORS対応
 tags:
   - AWS
   - AWSSAM
-private: true
-updated_at: '2023-12-12T21:46:34+09:00'
+private: false
+updated_at: '2023-12-13T07:00:38+09:00'
 id: 5e9a0b93e56438edff63
 organization_url_name: null
 slide: false

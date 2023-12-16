@@ -1,10 +1,10 @@
 ---
 title: 某社風のGoogleスライドテンプレートを作った
 tags:
-  - 'LT'
+  - LT
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-12-16T23:14:46+09:00'
+id: 85ae803ee661401d22e1
 organization_url_name: null
 slide: false
 ignorePublish: false

@@ -4,7 +4,7 @@ tags:
   - Python
   - VCClient
 private: true
-updated_at: '2023-12-17T11:05:04+09:00'
+updated_at: '2023-12-17T11:06:00+09:00'
 id: 9162015962ef591c9b94
 organization_url_name: null
 slide: false

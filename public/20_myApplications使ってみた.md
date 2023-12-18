@@ -48,6 +48,7 @@ Resource Explorerを有効化していないと、セットアップするよう
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/3a549a36-47ea-10f7-fc53-9a979a2bcd6c.png)
 その他、myApplicationsに移動するとコストなどが確認できます。
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/693b74c4-dbf4-e9b1-6449-9069cfa6de13.png)
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/590707/60051c40-1d6e-2de6-265a-66fbc599d2c5.png)
 
 # おわりに
 アプリケーション、サービスごとに管理しやすくなっていいですね！

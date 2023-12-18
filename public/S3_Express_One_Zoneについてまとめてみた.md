@@ -1,11 +1,11 @@
 ---
 title: S3 Express One Zoneについてまとめてみた
 tags:
-  - 'AWS'
-  - 'S2'
+  - AWS
+  - s2
 private: true
-updated_at: ''
-id: null
+updated_at: '2023-12-18T14:41:02+09:00'
+id: e404e30666b98dd95315
 organization_url_name: null
 slide: false
 ignorePublish: false

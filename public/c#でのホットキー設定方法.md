@@ -1,0 +1,129 @@
+---
+title: c#でのホットキー設定方法
+tags:
+  - 'C#'
+private: true
+updated_at: ''
+id: null
+organization_url_name: null
+slide: false
+ignorePublish: false
+---
+# はじめに
+[にわのわ](https://twitter.com/niwa_nowa)です。
+
+c#におけるホットキーの設定方法について書きます。
+c#でのホットキーの設定は、ctrlキー、windowsキー、altキー＋通常のキー1つの組み合わせで設定可能です。
+
+# ソース
+以下のソースではホットキー設定用のフォームを作成し、閉じられた際にホットキーの設定を行っています。
+```csharp
+    List<Keys> hotkeyKeys = new List<Keys>(hotKeySettingForm.GetHotkeyKeys());
+
+    //ホットキーが設定されていない場合は何もしない
+    if (hotkeyKeys.Count == 0)
+    {
+        return;
+    }
+
+    //ホットキーの設定をラベルに表示
+    testlabel.Text = "ホットキー設定：" + string.Join(" + ", hotkeyKeys);
+
+    int modKey = 0x0000;
+    if (hotkeyKeys.Contains(Keys.ControlKey))
+    {
+        modKey |= 0x0002;
+        _ = hotkeyKeys.Remove(Keys.ControlKey);
+    }
+    if (hotkeyKeys.Contains(Keys.Menu))
+    {
+        modKey |= 0x0001;
+        _ = hotkeyKeys.Remove(Keys.Menu);
+    }
+    if (hotkeyKeys.Contains(Keys.ShiftKey))
+    {
+        modKey |= 0x0004;
+        _ = hotkeyKeys.Remove(Keys.ShiftKey);
+    }
+
+    //ホットキーを設定する。
+    hotKey = new HotKey(modKey, hotkeyKeys[0]);
+    hotKey.HotKeyPush += new EventHandler(#実行したい関数);
+}
+```
+
+ホットキー設定用のフォームは以下のようになっています。
+```csharp
+ public partial class HotKeySettingForm : Form
+ {
+     public HotKeySettingForm()
+     {
+         InitializeComponent();
+     }
+
+     public Keys SelectedHotkey { get; private set; }
+     public List<Keys> HotkeyKeys { get; set; } = new List<Keys>();
+     public int KeyCount { get; set; } = 0;
+
+     private void buttonSubmit_Click(object sender, EventArgs e)
+     {
+         // ホットキーが設定されていない場合はエラーを表示
+         if (HotkeyKeys.Count == 0)
+         {
+             _ = MessageBox.Show("ホットキーが設定されていません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+         }
+         else
+         {
+             // OKボタンがクリックされたときにフォームを閉じる
+             DialogResult = DialogResult.OK;
+             Close();
+         }
+     }
+
+     private void HotKeySettingForm_KeyDown(object sender, KeyEventArgs e)
+     {
+         //　押下されたキーが一つの場合、リストをクリアして押下されたキーを追加
+         if (KeyCount == 0)
+         {
+             HotkeyKeys.Clear();
+             HotkeyKeys.Add(e.KeyCode);
+             KeyCount++;
+         }
+         else
+         {
+             if (!HotkeyKeys.Contains(e.KeyCode))
+             {
+                 HotkeyKeys.Add(e.KeyCode);
+                 KeyCount++;
+             }
+         }
+
+         // ホットキーのリストをラベルに表示
+         labelHotKey.Text = string.Join(" + ", HotkeyKeys);
+     }
+
+     private void HotKeySettingForm_KeyUp(object sender, KeyEventArgs e)
+     {
+         KeyCount--;
+     }
+
+     public List<Keys> GetHotkeyKeys()
+     {
+         return HotkeyKeys;
+     }
+
+
+ }
+```
+また、プロkグラムが終了する際にホットキーの監視解除が必要です
+```csharp
+    private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+    {
+        //ホットキーの監視を解除する
+        hotKey.Dispose();
+    }
+```
+
+# おわりに
+これらでc#でのホットキーの設定ができるようになります。
+今回記載した内容では、バックグラウンドでもホットキーの監視ができるため、そこそこ満足しています。

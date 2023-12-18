@@ -21,13 +21,13 @@ ignorePublish: false
 保存料金はS3 Standardの約7倍、データアクセス料金はS3 Standardの約半分です。
 短いライフサイクルの中で小さなオブジェクトに対してアクセスが多いときにより効果的です。
 
-### 保存料金
-S3 Standard：$0.025 per GB
-S3 Express One Zone：$0.18 per GB
+最も読者が近いであろうTokyoリージョンでの比較です。
 
-### データアクセス料金
-S3 Standard：$0.0047	$0.00037
-S3 Express One Zone：$0.0024	$0.00019
+| ストレージクラス         | 保存料金（GBあたり） | PUT, COPY, POST, LIST requests | GET, SELECT, and all other requests |
+|----------------------|-------------------|-------------------------------|-------------------------------|
+| S3 Standard          | $0.025            | $0.0047                       | $0.00037                      |
+| S3 Express One Zone  | $0.18             | $0.0024                       | $0.00019                      |
+
 
 参照
 

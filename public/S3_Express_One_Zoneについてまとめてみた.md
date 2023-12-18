@@ -2,7 +2,7 @@
 title: S3 Express One Zoneについてまとめてみた
 tags:
   - AWS
-  - s2
+  - s3
 private: true
 updated_at: '2023-12-18T14:41:02+09:00'
 id: e404e30666b98dd95315

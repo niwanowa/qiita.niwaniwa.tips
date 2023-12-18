@@ -3,7 +3,7 @@ title: 某社風のGoogleスライドテンプレートを作った
 tags:
   - LT
 private: true
-updated_at: '2023-12-18T14:41:01+09:00'
+updated_at: '2023-12-18T14:45:54+09:00'
 id: 85ae803ee661401d22e1
 organization_url_name: null
 slide: false

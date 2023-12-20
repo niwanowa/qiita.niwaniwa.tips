@@ -3,8 +3,8 @@ title: myApplications使ってみた
 tags:
   - AWS
   - myApplications
-private: true
-updated_at: '2023-12-19T16:03:37+09:00'
+private: false
+updated_at: '2023-12-20T07:00:37+09:00'
 id: bca04c3750ca7eb07a60
 organization_url_name: null
 slide: false
